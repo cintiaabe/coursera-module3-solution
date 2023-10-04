@@ -1,0 +1,181 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    width: 100%;
+    max-height: auto;
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(91, 60, 12);
+}
+
+.navbar-brand{
+    float: left;
+    text-decoration: none;
+    font-family:'Courier New';
+    font-size: 19px;
+    padding: 0.2em 0.7em;
+    color: white;
+}
+
+.navbar-nav{
+    margin: 0%;
+}
+
+.navbar .navbar-nav .nav-item{
+    display: inline;
+    list-style: none;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.navbar-nav .nav-item a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0.9em 0.7em;
+    color: black;
+}
+
+.navbar-collapse{
+    border: 1px solid black;
+}
+.toggle-collapse{
+    float: right;
+    width: 45px;
+    height: 32px;
+    margin: 0.4em 0.7em;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+.toggle-collapse:hover{
+    color: rgb(232, 232, 232);
+}
+
+h1 {
+    display: flex;
+    font-family: 'Courier New';
+    margin-bottom: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+article{
+    float: right;
+}
+.row >section>div>div {
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New';
+    float: right;
+}
+#chicken {
+    background-color: rgb(242, 192, 217);
+}
+
+#beef {
+    background-color: rgb(232, 94, 94);
+}
+
+#sushi {
+    background-color: rgb(243, 244, 217);
+}
+@media (min-width: 992px) {
+    .line3-s, .line2-s, .line1-s {
+        float: left;
+        border: 1px solid black;
+        padding: 0.2em;
+        margin-left: 15px;
+        background-color: grey;
+      }
+      .line1-s {
+          width: 32%;
+      }
+      .line2-s {
+          width: 32%;
+      }
+      .line3-s{
+          width: 32%;
+      }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .line3-s, .line2-s, .line1-s {
+        float: left;
+        border: 1px solid black;
+        padding: 0.2em;
+        margin-left: 15px;
+        margin-top: 15px;
+        background-color: grey;
+      }
+      .line1-s {
+          width: 47%;
+      }
+      .line2-s {
+          width: 47%;
+      }
+      .line3-s{
+          width: 97%;
+      }
+   
+}
+
+@media (max-width: 767px) {
+    .navbar-brand{
+        display: inline-block;
+        float: none;
+    }
+    .toggle-collapse{
+        display: inline-block;
+    }
+    .navbar-nav{
+        color: white;
+        padding: 0%;
+    }
+    .navbar .navbar-nav .nav-item{
+        display: block;
+        list-style: none;
+    }
+    .navbar-collapse{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        height: 0vh;
+        transition: all 499ms ease;
+    }
+    .collapse{
+        height: 100vh;
+    }
+    .line3-s, .line2-s, .line1-s {
+        float: left;
+        border: 1px solid black;
+        padding: 0.2em;
+        margin-top: 15px;
+        background-color: grey;
+      }
+      .line1-s {
+          width: 96%;
+      }
+      .line2-s {
+          width: 96%;
+      }
+      .line3-s{
+          width: 96%;
+      }
+  }
